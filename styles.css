@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica;
     background: #F8F8FF;
     color: #191970;
 }
 h1, h2 {
-    font-family: Business, serif;
+    font-family: Business;
     color: #000000;
 }
 a {
