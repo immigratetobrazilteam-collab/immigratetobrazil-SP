@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Immigrate to S\u00e3o Paulo",
+  "description": "S\u00e3o Paulo is Brazil's most populous state in the Southeast Region, known for its economic powerhouse status, diverse culture from Portuguese colonization and immigration, and attractions like UNESCO sites, beaches, and urban landmarks in its capital.",
+  "keywords": "S\u00e3o Paulo, Brazil, Southeast Region, economy, tourism, immigration, UNESCO sites",
+  "url": "https://immigratetobrazil.com/sp/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "S\u00e3o Paulo",
+    "addressCountry": "BR"
+  },
+  "sameAs": [
+    "https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_(state)",
+    "https://sp.gov.br/sp",
+    "https://geohack.toolforge.org/geohack.php?pagename=S%C3%A3o_Paulo_(state)&params=22_4_12_S_48_26_1_W_type:adm1st_region:BR-SP&title=Obelisco+do+Centro+do+Estado"
+  ]
+}
