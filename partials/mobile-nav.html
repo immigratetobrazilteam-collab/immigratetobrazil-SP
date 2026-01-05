@@ -1,15 +1,52 @@
-<nav class="mobile-nav" aria-label="Mobile navigation">
-    <button aria-expanded="false" aria-controls="mobile-menu">Menu</button>
-    <ul id="mobile-menu" hidden>
-        <li><a href="/">Home</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/services/artistic-visa">Artistic Visa</a></li>
-        <li><a href="/sp">Explore São Paulo</a></li>
+<nav class="mobile-nav md:hidden" aria-label="Mobile navigation">
+    <button aria-expanded="false" aria-controls="mobile-menu" class="w-full px-4 py-2 bg-[#000000] text-white rounded flex justify-between items-center">Menu <i class="fas fa-chevron-down"></i></button>
+    <ul id="mobile-menu" class="hidden flex flex-col bg-white shadow-md rounded-md mt-1 overflow-auto max-h-[80vh]">
+        <li><a href="/" class="block px-4 py-2 hover:bg-[#FFFFFF]/10">Home</a></li>
+        <li>
+            <button class="w-full text-left px-4 py-2 hover:bg-[#FFFFFF]/10 flex justify-between items-center" aria-expanded="false" aria-controls="services-sub">Services <i class="fas fa-chevron-down"></i></button>
+            <ul id="services-sub" class="hidden pl-4">
+                <li class="font-bold py-1">Travel Services</li>
+                
+                <li class="font-bold py-1 mt-2">Brazilian Visas</li>
+                <li><a href="/visas/artistic-visa" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Artistic Visa">Artistic Visa</a></li>
+                <li class="font-bold py-1 mt-2">Residency Permits</li>
+                
+                <li class="font-bold py-1 mt-2">Citizenship & Naturalisation</li>
+                
+                <li class="font-bold py-1 mt-2">Other Services</li>
+                
+            </ul>
+        </li>
+        <li>
+            <button class="w-full text-left px-4 py-2 hover:bg-[#FFFFFF]/10 flex justify-between items-center" aria-expanded="false" aria-controls="explore-sub">Explore São Paulo <i class="fas fa-chevron-down"></i></button>
+            <ul id="explore-sub" class="hidden pl-4">
+                <li><a href="/explore/obelisco-do-centro-do-estado" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Obelisco do Centro do Estado">Obelisco do Centro do Estado</a></li><li><a href="/explore/basilica-of-our-lady-of-aparecida" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Basilica of Our Lady of Aparecida">Basilica of Our Lady of Aparecida</a></li><li><a href="/explore/altino-arantes-building" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Altino Arantes Building">Altino Arantes Building</a></li><li><a href="/explore/avenida-paulista" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Avenida Paulista">Avenida Paulista</a></li><li><a href="/explore/masp-(são-paulo-museum-of-art)" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="MASP (São Paulo Museum of Art)">MASP (São Paulo Museum of Art)</a></li><li><a href="/explore/theatro-municipal" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Theatro Municipal">Theatro Municipal</a></li><li><a href="/explore/pinacoteca-do-estado-de-são-paulo" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Pinacoteca do Estado de São Paulo">Pinacoteca do Estado de São Paulo</a></li><li><a href="/explore/memorial-da-américa-latina" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Memorial da América Latina">Memorial da América Latina</a></li><li><a href="/explore/são-paulo-art-biennial" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="São Paulo Art Biennial">São Paulo Art Biennial</a></li><li><a href="/explore/interlagos-circuit" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Interlagos Circuit">Interlagos Circuit</a></li><li><a href="/explore/morumbi-stadium" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Morumbi Stadium">Morumbi Stadium</a></li><li><a href="/explore/neo-química-arena" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Neo Química Arena">Neo Química Arena</a></li><li><a href="/explore/pacaembu-stadium" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Pacaembu Stadium">Pacaembu Stadium</a></li><li><a href="/explore/catedral-da-sé" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Catedral da Sé">Catedral da Sé</a></li><li><a href="/explore/obelisk-of-são-paulo" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Obelisk of São Paulo">Obelisk of São Paulo</a></li><li><a href="/explore/marco-zero" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Marco Zero">Marco Zero</a></li><li><a href="/explore/monument-to-the-independence-of-brazil" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Monument to the Independence of Brazil">Monument to the Independence of Brazil</a></li><li><a href="/explore/copan" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Copan">Copan</a></li><li><a href="/explore/itália" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Itália">Itália</a></li><li><a href="/explore/martinelli" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Martinelli">Martinelli</a></li><li><a href="/explore/mirante-do-vale" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Mirante do Vale">Mirante do Vale</a></li><li><a href="/explore/hotel-unique" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Hotel Unique">Hotel Unique</a></li><li><a href="/explore/conjunto-nacional" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Conjunto Nacional">Conjunto Nacional</a></li><li><a href="/explore/octávio-frias-de-oliveira-bridge" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Octávio Frias de Oliveira Bridge">Octávio Frias de Oliveira Bridge</a></li><li><a href="/explore/pátio-do-colégio" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Pátio do Colégio">Pátio do Colégio</a></li><li><a href="/explore/municipal-market" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Municipal Market">Municipal Market</a></li><li><a href="/explore/luz-station" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Luz Station">Luz Station</a></li><li><a href="/explore/serra-do-mar" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Serra do Mar">Serra do Mar</a></li><li><a href="/explore/serra-da-mantiqueira" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Serra da Mantiqueira">Serra da Mantiqueira</a></li><li><a href="/explore/tietê-river" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Tietê River">Tietê River</a></li><li><a href="/explore/paranapanema-river" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Paranapanema River">Paranapanema River</a></li><li><a href="/explore/atlantic-ocean-coastline" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Atlantic Ocean coastline">Atlantic Ocean coastline</a></li><li><a href="/explore/dunes" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="dunes">dunes</a></li><li><a href="/explore/restingas" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="restingas">restingas</a></li><li><a href="/explore/mangroves" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="mangroves">mangroves</a></li><li><a href="/explore/waterfalls" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="waterfalls">waterfalls</a></li><li><a href="/explore/canyons" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="canyons">canyons</a></li><li><a href="/explore/thermal-waters" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="thermal waters">thermal waters</a></li><li><a href="/explore/ibirapuera-park" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Ibirapuera Park">Ibirapuera Park</a></li><li><a href="/explore/campos-do-jordão-state-park" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Campos do Jordão State Park">Campos do Jordão State Park</a></li><li><a href="/explore/morro-do-diabo-state-park" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Morro do Diabo State Park">Morro do Diabo State Park</a></li><li><a href="/explore/serra-da-bocaina-national-park" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Serra da Bocaina National Park">Serra da Bocaina National Park</a></li><li><a href="/explore/parque-estadual-da-serra-do-mar" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Parque Estadual da Serra do Mar">Parque Estadual da Serra do Mar</a></li><li><a href="/explore/alto-ribeira-tourist-state-park" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="Alto Ribeira Tourist State Park">Alto Ribeira Tourist State Park</a></li><li><a href="/explore/orange-juice" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="orange juice">orange juice</a></li><li><a href="/explore/sugar" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="sugar">sugar</a></li><li><a href="/explore/ethanol" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="ethanol">ethanol</a></li><li><a href="/explore/coffee" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="coffee">coffee</a></li><li><a href="/explore/soy" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="soy">soy</a></li><li><a href="/explore/maize" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="maize">maize</a></li><li><a href="/explore/bananas" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="bananas">bananas</a></li><li><a href="/explore/peanuts" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="peanuts">peanuts</a></li><li><a href="/explore/lemons" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="lemons">lemons</a></li><li><a href="/explore/persimmons" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="persimmons">persimmons</a></li><li><a href="/explore/tangerine" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="tangerine">tangerine</a></li><li><a href="/explore/cassava" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="cassava">cassava</a></li><li><a href="/explore/carrots" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="carrots">carrots</a></li><li><a href="/explore/potatoes" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="potatoes">potatoes</a></li><li><a href="/explore/strawberries" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="strawberries">strawberries</a></li><li><a href="/explore/milk" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="milk">milk</a></li><li><a href="/explore/cheese" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="cheese">cheese</a></li><li><a href="/explore/wine" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="wine">wine</a></li><li><a href="/explore/oil" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="oil">oil</a></li><li><a href="/explore/eggs" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="eggs">eggs</a></li><li><a href="/explore/chicken" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="chicken">chicken</a></li><li><a href="/explore/pork" class="block py-2 pl-4 hover:bg-[#FFFFFF]/10" title="pork">pork</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact" class="block px-4 py-2 hover:bg-[#FFFFFF]/10">Contact</a></li>
+        <li><a href="/faq" class="block px-4 py-2 hover:bg-[#FFFFFF]/10">FAQ</a></li>
+        <li><a href="/blog" class="block px-4 py-2 hover:bg-[#FFFFFF]/10">Blog</a></li>
+        <li><a href="/about" class="block px-4 py-2 hover:bg-[#FFFFFF]/10">About</a></li>
     </ul>
     <script>
-    document.querySelector('.mobile-nav button').addEventListener('click', function() {
-        this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
-        document.getElementById('mobile-menu').hidden = !document.getElementById('mobile-menu').hidden;
-    });
+        const menuBtn = document.querySelector('.mobile-nav button');
+        const menu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            menuBtn.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('hidden');
+            menuBtn.querySelector('i').classList.toggle('fa-chevron-down');
+            menuBtn.querySelector('i').classList.toggle('fa-chevron-up');
+        });
+        document.querySelectorAll('.mobile-nav li button').forEach(subBtn => {
+            subBtn.addEventListener('click', () => {
+                const expanded = subBtn.getAttribute('aria-expanded') === 'true';
+                subBtn.setAttribute('aria-expanded', !expanded);
+                const subMenu = document.getElementById(subBtn.getAttribute('aria-controls'));
+                subMenu.classList.toggle('hidden');
+                subBtn.querySelector('i').classList.toggle('fa-chevron-down');
+                subBtn.querySelector('i').classList.toggle('fa-chevron-up');
+            });
+        });
     </script>
 </nav>
